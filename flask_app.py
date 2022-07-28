@@ -38,9 +38,9 @@ def cleanDictValues(dictionary):
 	],
 )
 def requestGet(url, headers):
+	import requests
+	import json
 	try:
-		import requests
-		import json
 		urls = url.split("|")
 		outList = []
 		for url_i in urls:
